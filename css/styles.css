@@ -24,6 +24,7 @@ body {
   font-family: var();
   font-weight: var();
   font-size: 1.6rem;
+  background-color: var(--bg-grey);
 
   display: flex;
   justify-content: center;
