@@ -1,0 +1,120 @@
+@import url("./base.css");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bg-grey: rgba(242, 242, 242, 1);
+  --orange: rgba(226, 134, 37, 1);
+  --light-green: rgba(0, 105, 113, 1);
+  --deep-green: rgba(0, 65, 64, 1);
+
+  --ff-Lexend-Deca: "Lexend Deca", sans-serif;
+  --ff-Big-Shoulder-Display: "Big Shoulders Display", sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var();
+  font-weight: var();
+  font-size: 1.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sedans {
+  background-color: var(--orange);
+}
+.suvs {
+  background-color: var(--light-green);
+}
+.luxury {
+  background-color: var(--deep-green);
+}
+.orange {
+  color: var(--orange);
+}
+.light-green {
+  color: var(--light-green);
+}
+.deep-green {
+  color: var(--deep-green);
+}
+
+main {
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  margin: 24px;
+}
+
+.card {
+  padding: 48px;
+  width: 307px;
+}
+
+.car-img {
+  width: 64px;
+  margin-bottom: 35px;
+}
+
+.card-title {
+  font-family: var(--ff-Big-Shoulder-Display);
+  font-weight: var(--fw-bold);
+  font-size: 4rem;
+  margin-bottom: 25px;
+  color: var(--bg-grey);
+}
+
+.card-body {
+  font-family: var(--ff-Lexend-Deca);
+  font-weight: var(--fw-regular);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 83px;
+  color: var(--bg-grey);
+  opacity: 75%;
+}
+
+.button {
+  display: block;
+  width: 146px;
+  height: 48px;
+  line-height: 44px;
+  font-family: var(--ff-Lexend-Deca);
+  font-weight: var(--fw-regular);
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: var(--bg-grey);
+  border-radius: 25px;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.button:focus,
+.button:hover {
+  color: var(--bg-grey);
+  border-color: currentColor;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    margin: 88px 24px;
+  }
+  .card {
+    width: 327px;
+  }
+  .card-body {
+    margin-bottom: 25px;
+  }
+}
